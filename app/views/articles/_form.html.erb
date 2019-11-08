@@ -13,6 +13,11 @@
     <%= f.text_area :body %>
   </p>
   <p>
+  <%= f.label :tag_list %>  (<%= link_to "all tags", tags_path %>)<br />
+  <%= f.text_field :tag_list %>
+</p>
+  <p>
     <%= f.submit %>
   </p>
+  
 <% end %>
